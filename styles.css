@@ -1,0 +1,55 @@
+/*Variables*/
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark_Gray: hsl(0, 0%, 55%);
+  --Very_Dark_Gray: hsl(0, 0%, 41%);
+}
+
+/*Globales*/
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1, h2, h3 {
+  font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+li, p {
+  font-family: 'Alata', Arial, Helvetica, sans-serif;
+}
+
+/*Header*/
+.background-wapper{
+  min-width: 375px;
+  height: 400px;
+  background-image: url('./images/mobile/image-hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 10px 25px;
+}
+.header .header-icon img {
+  width: 150px;
+}
+.main .main__hero {
+  width: 273px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 25px;
+  border: 2px solid var(--White);
+}
+.main__hero h1 {
+  margin: 0;
+  color: var(--White);
+  font-size: 40px;
+}
