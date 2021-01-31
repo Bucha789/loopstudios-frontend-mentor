@@ -92,9 +92,9 @@ li, p {
   color: var(--Black);
 }
 .projects div {
-  width: 300px;
-  height: 100px;
-  padding: 10px;
+  width: 280px;
+  height: 80px;
+  padding: 20px ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -123,4 +123,20 @@ li, p {
 }
 .projects div:nth-of-type(8){
   background-image: url('./images/mobile/image-fisheye.jpg');
+}
+.projects div h3 {
+  width: 150px;
+  text-align: left;
+  vertical-align: bottom;
+  font-size: 25px;
+}
+button {
+  width: 150px;
+  height: 40px;
+  font-family: 'Alata', sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: 2px solid var(--Black);
+  background-color: var(--White);
 }
