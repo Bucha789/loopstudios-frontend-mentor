@@ -145,9 +145,8 @@ li, p {
   color: var(--Black);
 }
 .projects div {
-  width: 280px;
-  height: 80px;
-  padding: 20px ;
+  width: 320px;
+  height: 125px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -178,10 +177,15 @@ li, p {
   background-image: url('./images/mobile/image-fisheye.jpg');
 }
 .projects div h3 {
+  margin: 0;
   width: 150px;
+  height: 65px;
+  padding-left: 20px;
+  padding-top: 60px;
   text-align: left;
   vertical-align: bottom;
   font-size: 25px;
+  background: linear-gradient(90deg, rgba(41,35,35,0.8687850140056023) 0%, rgba(0,212,255,0) 60%);
 }
 button {
   width: 150px;
