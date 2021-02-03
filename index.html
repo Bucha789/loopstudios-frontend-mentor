@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400&display=swap"
+    rel="stylesheet">
   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="./styles.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css" media="min-width=374px">
+  <link rel="stylesheet" href="./desktop.css" media="min-width=1440px">
+  <title>Loopstudios</title>
 </head>
+
 <body>
-  <div class="background-wapper">    
+  <div class="background-wapper">
     <header class="header">
       <div class="header-icon">
         <img src="./images/logo.svg" alt="Empresa Logo">
       </div>
       <div class="header-menu">
-        <img src="./images/icon-hamburger.svg" alt="Menu despegable" id="show">      
+        <img src="./images/icon-hamburger.svg" alt="Menu despegable" id="show">
+      </div>
+      <!--parte del escritorio-->
+      <div class="header-menu-dekstop">
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Careers</a></li>
+          <li><a href="/">Events</a></li>
+          <li><a href="/">Products</a></li>
+          <li><a href="/">Support</a></li>
+        </ul>
       </div>
     </header>
     <main class="main">
@@ -39,72 +53,74 @@
           </ul>
         </div>
       </div>
+  </div>
+
+  <!--parte de la descripcion-->
+  <div class="description-container">
+    <div class="image__description">
+      <img src="./images/mobile/image-interactive.jpg" alt="alguien con una gafas de realidad virtual">
     </div>
-    <!--parte de la descripcion-->
-      <div class="description-container">
-        <div class="image__description">
-          <img src="./images/mobile/image-interactive.jpg" alt="alguien con una gafas de realidad virtual">
-        </div>
-        <div class="description">
-          <h2>The leader in interactive VR</h2>
-          <p>Founded in 2011, Loopstudios has been producing world-class virtual reality
-            projects for some of the best companies around the globe.
-            Our award-winning creations have transformed businesses through
-            digital experiences that bind to their brand.</p>
-        </div>
-        <div class="projects">
-          <h2>Our creations</h2>
-          <div class="">
-            <h3>Deep earth</h3>
-          </div>
-          <div>
-            <h3>Night arcade</h3>
-          </div>
-          <div>
-            <h3>Soccer team VR</h3>
-          </div>
-          <div>
-            <h3>The grid</h3>
-          </div>
-          <div>
-            <h3>From up above VR</h3>
-          </div>
-          <div>
-            <h3>Pocket borealis</h3>
-          </div>
-          <div>
-            <h3>The Curiosity</h3>
-          </div>
-          <div>
-            <h3>Make it Fisheye</h3>
-          </div>
-        </div>
-        <button class="button">See all</button>
-      </main>
-      <footer class="footer">
-        <div class="contact-section">
-          <img src="./images/logo.svg" alt="imagen del footer">
-          <ul>
-            <li>About</li>
-            <li>Careers</li>
-            <li>Events</li>
-            <li>Products</li>
-            <li>Support</li>
-          </ul>
-        </div>
-        <div class="social-media">
-          <a href="/" class="contact-container"><span></span></a>
-          <a href="/" class="contact-container"><span></span></a>
-          <a href="/" class="contact-container"><span></span></a>
-          <a href="/" class="contact-container"><span></span></a>
-        </div>
-        <div class="disclaimer">
-          <p>
-            © 2021 Loopstudios. All rights reserved.
-          </p>
-        </div>
+    <div class="description">
+      <h2>The leader in interactive VR</h2>
+      <p>Founded in 2011, Loopstudios has been producing world-class virtual reality
+        projects for some of the best companies around the globe.
+        Our award-winning creations have transformed businesses through
+        digital experiences that bind to their brand.</p>
+    </div>
+    <div class="projects">
+      <h2>Our creations</h2>
+      <div class="">
+        <h3>Deep earth</h3>
       </div>
-    </footer>
-    <script src="./main.js"></script>
-  </body>
+      <div>
+        <h3>Night arcade</h3>
+      </div>
+      <div>
+        <h3>Soccer team VR</h3>
+      </div>
+      <div>
+        <h3>The grid</h3>
+      </div>
+      <div>
+        <h3>From up above VR</h3>
+      </div>
+      <div>
+        <h3>Pocket borealis</h3>
+      </div>
+      <div>
+        <h3>The Curiosity</h3>
+      </div>
+      <div>
+        <h3>Make it Fisheye</h3>
+      </div>
+    </div>
+    <button class="button">See all</button>
+    </main>
+    <footer class="footer">
+      <div class="contact-section">
+        <img src="./images/logo.svg" alt="imagen del footer">
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Products</li>
+          <li>Support</li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <a href="/" class="contact-container"><span></span></a>
+        <a href="/" class="contact-container"><span></span></a>
+        <a href="/" class="contact-container"><span></span></a>
+        <a href="/" class="contact-container"><span></span></a>
+      </div>
+      <div class="disclaimer">
+        <p>
+          © 2021 Loopstudios. All rights reserved.
+        </p>
+      </div>
+  </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
 </html>
