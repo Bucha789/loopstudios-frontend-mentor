@@ -38,6 +38,9 @@ li, p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.header{
+  width: 70%;
+}
 .header, .menu-icons{ /*Para ahorrar las mismas medidas jajaj*/
   min-width: 320px;
   display: flex;
@@ -46,6 +49,9 @@ li, p {
   height: 100px;
   padding: 10px 27.5px;
   margin-bottom: 100px;
+}
+.header-menu-dekstop{
+  display: none;
 }
 .header .header-icon img {
   width: 150px;
