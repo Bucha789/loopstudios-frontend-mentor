@@ -7,7 +7,7 @@
 }
 
 /*Globales*/
-body{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,9 +26,11 @@ h2 {
 li, p {
   font-family: 'Alata', Arial, Helvetica, sans-serif;
 }
-
+.container, .main, {
+  
+}
 /*Header*/
-.background-wapper{
+.background-image-wapper{
   position: relative;
   width: 100%;
   min-width: 375px;
@@ -38,17 +40,15 @@ li, p {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.header{
-  width: 70%;
-}
-.header, .menu-icons{ /*Para ahorrar las mismas medidas jajaj*/
+.header{ /*Para ahorrar las mismas medidas jajaj*/
+  margin: 0 auto;
   min-width: 320px;
+  height: 110px;
+  margin-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
   padding: 10px 27.5px;
-  margin-bottom: 100px;
 }
 .header-menu-dekstop{
   display: none;
@@ -57,14 +57,12 @@ li, p {
   width: 150px;
 }
 .main .main__hero {
-  width: 273px;
-  height: 150px;
   margin: 0 auto;
+  width: 320px;
   padding: 25px;
   border: 2px solid var(--White);
 }
 .main__hero h1 {
-  margin: 0;
   font-size: 40px;
 }
 /*Parte del menu desplegable*/
@@ -75,8 +73,10 @@ li, p {
 .menu{
   position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   height: 100vh;
-  width: 100%;
   min-width: 375px;
   background-color: var(--Black);
   display: flex;
@@ -84,14 +84,20 @@ li, p {
   align-items: center;
   opacity: 0;
 }
+.menu-icons {
+  min-width: 375px;
+  height: 110px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 27.5px;
+}
 .menu .menu-icons img:nth-of-type(1) {
   width: 150px;
 }
 .menu-options{
   width: 320px;
-}
-.menu-options ul{
-  padding: 0;
 }
 .menu-options ul li {
   list-style: none;
@@ -130,11 +136,13 @@ li, p {
   margin-top: 80px;
 }
 .description-container .description {
+  margin-top: 25px;
   width: 320px;
   text-align: center;
 }
 .description-container .description h2 {
   font-size: 35px;
+  margin-bottom: 20px;
 }
 .description-container .description p {
   color: var(--Dark_Gray);
@@ -143,20 +151,22 @@ li, p {
 
 /*Parte de los proyectos*/
 .projects{
+  margin: 0 auto;
   width: 320px;
   text-align: center;
 }
 .projects h2 {
   font-size: 35px;
   color: var(--Black);
+  margin-bottom: 30px
 }
 .projects div {
   width: 320px;
   height: 125px;
+  margin-bottom: 25px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 25px;
 }
 .projects div:nth-of-type(1){
   background-image: url('./images/mobile/image-deep-earth.jpg');
@@ -183,7 +193,6 @@ li, p {
   background-image: url('./images/mobile/image-fisheye.jpg');
 }
 .projects div h3 {
-  margin: 0;
   width: 150px;
   height: 65px;
   padding-left: 20px;
@@ -194,8 +203,10 @@ li, p {
   background: linear-gradient(90deg, rgba(41,35,35,0.8687850140056023) 0%, rgba(0,212,255,0) 60%);
 }
 button {
+  display: block;
   width: 150px;
   height: 40px;
+  margin: 0 auto;
   margin-bottom: 80px;
   font-family: 'Alata', sans-serif;
   font-size: 15px;

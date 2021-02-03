@@ -8,13 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400&display=swap"
     rel="stylesheet">
   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="./styles.css" media="(max-width: 767px)">
-  <link rel="stylesheet" href="./desktop.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="./styles.css">
+  <!-- <link rel="stylesheet" href="./desktop.css" media="(min-width: 768px)"> -->
   <title>Loopstudios</title>
 </head>
 
 <body>
-  <div class="background-wapper">
+  <!--parte del header con el menu y el mainhero-->
+  <div class="background-image-wapper">
     <header class="header">
       <div class="header-icon">
         <img src="./images/logo.svg" alt="Empresa Logo">
@@ -32,11 +33,6 @@
           <li><a href="/">Support</a></li>
         </ul>
       </div>
-    </header>
-    <main class="main">
-      <div class="main__hero">
-        <h1>Immersive Experiences That Deliver</h1>
-      </div>
       <!--Parte del menu que aparecerá-->
       <div class="menu hide" id="menu">
         <div class="menu-icons">
@@ -53,10 +49,15 @@
           </ul>
         </div>
       </div>
+    </header>
+    <main class="main">
+      <div class="main__hero">
+        <h1>Immersive Experiences That Deliver</h1>
+      </div>
   </div>
 
   <!--parte de la descripcion-->
-  <div class="description-container">
+  <section class="description-container">
     <div class="image__description">
       <img src="./images/mobile/image-interactive.jpg" alt="alguien con una gafas de realidad virtual">
     </div>
@@ -67,6 +68,9 @@
         Our award-winning creations have transformed businesses through
         digital experiences that bind to their brand.</p>
     </div>
+  </section>
+  <!--parte de los proyectos-->
+  <section class="container">
     <div class="projects">
       <h2>Our creations</h2>
       <div class="">
@@ -94,31 +98,32 @@
         <h3>Make it Fisheye</h3>
       </div>
     </div>
-    <button class="button">See all</button>
-    </main>
-    <footer class="footer">
-      <div class="contact-section">
-        <img src="./images/logo.svg" alt="imagen del footer">
-        <ul>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Events</li>
-          <li>Products</li>
-          <li>Support</li>
-        </ul>
-      </div>
-      <div class="social-media">
-        <a href="/" class="contact-container"><span></span></a>
-        <a href="/" class="contact-container"><span></span></a>
-        <a href="/" class="contact-container"><span></span></a>
-        <a href="/" class="contact-container"><span></span></a>
-      </div>
-      <div class="disclaimer">
-        <p>
-          © 2021 Loopstudios. All rights reserved.
-        </p>
-      </div>
-  </div>
+  </section>
+  <button class="button">See all</button>
+  </main>
+  <!--parte del footer-->
+  <footer class="footer">
+    <div class="contact-section">
+      <img src="./images/logo.svg" alt="imagen del footer">
+      <ul>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Events</li>
+        <li>Products</li>
+        <li>Support</li>
+      </ul>
+    </div>
+    <div class="social-media">
+      <a href="/" class="contact-container"><span></span></a>
+      <a href="/" class="contact-container"><span></span></a>
+      <a href="/" class="contact-container"><span></span></a>
+      <a href="/" class="contact-container"><span></span></a>
+    </div>
+    <div class="disclaimer">
+      <p>
+        © 2021 Loopstudios. All rights reserved.
+      </p>
+    </div>
   </footer>
   <script src="./main.js"></script>
 </body>
