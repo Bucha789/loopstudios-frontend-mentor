@@ -26,6 +26,10 @@ h2 {
 li, p {
   font-family: 'Alata', Arial, Helvetica, sans-serif;
 }
+li, a {
+  list-style: none;
+  text-decoration: none;
+}
 /*Header*/
 .background-image-wapper{
   position: relative;
@@ -40,6 +44,7 @@ li, p {
 .header{ /*Para ahorrar las mismas medidas jajaj*/
   margin: 0 auto;
   width: 100%;
+  max-width: 1200px;
   min-width: 320px;
   height: 110px;
   margin-bottom: 100px;
@@ -55,12 +60,14 @@ li, p {
   width: 150px;
 }
 .main {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 27.5px;
 }
 .main .main__hero {
-  margin: 0 auto;
   width: 100%;
   min-width: 320px;
+  max-width: 625px; 
   padding: 25px;
   border: 2px solid var(--White);
 }
@@ -104,11 +111,9 @@ li, p {
   min-width: 320px;
 }
 .menu-options ul li {
-  list-style: none;
   margin-bottom: 20px;
 }
 .menu-options ul li a{
-  text-decoration: none;
   text-transform: uppercase;
   font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
   font-weight: 300;
@@ -131,7 +136,9 @@ li, p {
 /*parte de la description*/
 .description-container{
   width: 100%;
+  max-width: 1150px;
   min-width: 375px;
+  margin: 0 auto;
   padding: 0px 27.5px;
   display: flex;
   flex-direction: column;
@@ -140,6 +147,9 @@ li, p {
 .description-container .image__description img{
   width: 320px;
   margin-top: 80px;
+}
+.description-container .image__description .image__desktop, .creations__container .image__desktop {
+  display: none;
 }
 .description-container .description {
   margin-top: 25px;
@@ -156,7 +166,7 @@ li, p {
 }
 
 /*Parte de los proyectos*/
-.container > h2 {
+.container .creations__container h2 {
   text-align: center;
   font-size: 35px;
   color: var(--Black);
@@ -164,6 +174,7 @@ li, p {
 }
 .projects{
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 27.5px;
   display: grid;
@@ -239,6 +250,7 @@ button {
 /*Parte del footer*/
 .footer {
   width: 100%;
+  padding: 0 120px;
   min-width: 375px;
   background-color: var(--Black);
   display: flex;
@@ -260,7 +272,6 @@ button {
   margin-bottom: 40px;
 }
 .contact-section ul li {
-  list-style: none;
   margin-bottom: 10px;
 }
 .social-media a {
@@ -340,5 +351,95 @@ button {
   .projects div:nth-of-type(8){
     grid-column: 3 / 5;
     grid-row: 4 / 5;
+  }
+}
+@media(min-width: 695px) {
+  .header .header-icon img {
+    width: 170px;
+  }
+  .header-menu{
+    display: none;
+  }
+  .header-menu-dekstop {
+    display: block;
+  }
+  .header .header-menu-dekstop ul{
+    display: flex;
+    gap: 30px;
+  }
+  .header-menu-dekstop ul li a {
+    color: var(--White);
+  }
+  /* .description-container {
+    position: relative;
+    height: 700px;
+  }
+  .description-container .image__description {
+    position: absolute;
+  }
+  .description-container .image__description img {
+    width: 450px;
+  }
+  .description-container .description {
+    position: absolute;
+  } */
+}
+@media(min-width: 900px) {
+  .background-image-wapper {
+    background-image: url('./images/desktop/image-hero.jpg');
+    /* height: 600px; */
+  }
+  .header {
+    padding-top: 60px;
+  }
+  .main .main__hero h1 {
+    font-size: 70px;
+  }
+  .description-container {
+    height: 650px;
+    position: relative;
+    padding: 0;
+    margin-bottom: 200px;
+  }
+  .description-container .image__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .description-container .image__description .image__desktop {
+    display: block;
+    width: 700px;
+    margin: 0;
+  }
+  .description-container .image__description .image__mobile, button {
+    display: none;
+  }
+  .description-container .description {
+    position: absolute;
+    margin: 0;
+    width: 575px;
+    padding: 90px 0 0 90px;
+    height: 300px;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    background-color: white;
+  }
+  .description-container .description h2 {
+    font-size: 45px;
+  }
+  .creations__container {
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 0 auto;
+  }
+  .creations__container .image__desktop {
+    margin: 0;
+    display: block;
+  }
+  .container .creations__container h2 {
+    margin: 0;
   }
 }
