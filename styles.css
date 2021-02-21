@@ -170,11 +170,13 @@ li, a {
   text-align: center;
   font-size: 35px;
   color: var(--Black);
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  min-width: 375px;
 }
 .projects{
   width: 100%;
   max-width: 1200px;
+  min-width: 375px;
   margin: 0 auto;
   padding: 0 27.5px;
   display: grid;
@@ -250,13 +252,19 @@ button {
 /*Parte del footer*/
 .footer {
   width: 100%;
-  padding: 0 120px;
   min-width: 375px;
   background-color: var(--Black);
+}
+.footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 27.5px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 .footer .contact-section {
   margin-top: 40px;
@@ -434,6 +442,7 @@ button {
     justify-content: space-between;
     align-items: center;    
     margin: 0 auto;
+    margin-bottom: 80px;
   }
   .creations__container .image__desktop {
     margin: 0;
@@ -441,5 +450,86 @@ button {
   }
   .container .creations__container h2 {
     margin: 0;
+    font-size: 45px;
+  }
+  .projects {
+    margin-bottom: 60px;
+  }
+  .projects div {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    min-width: 268.5px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .projects div:nth-of-type(1){
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: url('./images/desktop/image-deep-earth.jpg');
+  }
+  .projects div:nth-of-type(2){
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-image: url('./images/desktop/image-night-arcade.jpg');
+  }
+  .projects div:nth-of-type(3){
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    background-image: url('./images/desktop/image-soccer-team.jpg');
+  }
+  .projects div:nth-of-type(4){
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    background-image: url('./images/desktop/image-grid.jpg');
+  }
+  .projects div:nth-of-type(5){
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    background-image: url('./images/desktop/image-from-above.jpg');
+  }
+  .projects div:nth-of-type(6){
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    background-image: url('./images/desktop/image-pocket-borealis.jpg');
+  }
+  .projects div:nth-of-type(7){
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+    background-image: url('./images/desktop/image-curiosity.jpg');
+  }
+  .projects div:nth-of-type(8){
+    grid-column: 4 / 5;
+    grid-row: 3 / 5;
+    background-image: url('./images/desktop/image-fisheye.jpg');
+  }
+  .projects div h3 {
+    width: 160px;
+    padding: 0;
+    text-align: left;
+    vertical-align: bottom;
+    font-size: 30px;
+    background: transparent;
+  }
+  .footer .footer-container{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .social-media {
+    margin-top: 40px;
+    text-align: right;
+  }
+  .footer .footer-container .contact-section ul{
+    display: flex;
+    text-align: left;
+  }
+  .footer-container .contact-section ul li:not(:last-child) {
+    margin-right: 30px;
   }
 }
