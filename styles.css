@@ -131,7 +131,7 @@ li, a {
   animation-duration: .5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
-
+  
 }
 /*parte de la description*/
 .description-container{
@@ -374,6 +374,7 @@ button {
   .header .header-menu-dekstop ul{
     display: flex;
     gap: 30px;
+    transition: 1s;
   }
   .header-menu-dekstop ul li a {
     color: var(--White);
@@ -445,8 +446,10 @@ button {
     margin-bottom: 80px;
   }
   .creations__container .image__desktop {
+    transition: .5s;
     margin: 0;
     display: block;
+    cursor: pointer;
   }
   .container .creations__container h2 {
     margin: 0;
@@ -529,7 +532,28 @@ button {
     display: flex;
     text-align: left;
   }
-  .footer-container .contact-section ul li:not(:last-child) {
+  .footer-container .contact-section ul li {
     margin-right: 30px;
+    cursor: pointer;
   }
+}
+li:hover .underline{
+  transition: .5s;
+  opacity: 1;
+}
+button:hover {
+  transition: .5s;
+  background-color: black;
+  color: white;
+}
+.underline {
+  transition: .5s;
+  opacity: 0;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-top: 5px;
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: white;
 }
